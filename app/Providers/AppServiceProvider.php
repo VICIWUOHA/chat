@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema; //NEW: Import Schema
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -21,8 +22,17 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
+
+
+    /**Corection to enable migration 
+     * 
+    */
     public function boot()
     {
-        //
+        Schema::defaultStringLength(191); //NEW: Increase StringLength//
     }
+
+    
+    
 }
+

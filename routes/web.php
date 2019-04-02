@@ -14,3 +14,25 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/try', function () {
+    return view('try');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+//routes for social login
+Route::get('{provider}/auth', [
+      'uses' =>'SocialsController@auth',
+      'as'=>'social.auth']);
+
+Route::get('{provider}/redirect', [
+      'uses' =>'SocialsController@auth_callback',
+      'as'=>'social.callback']);
+
+
+
