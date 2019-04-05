@@ -12,10 +12,9 @@ return [
             'redirect_uri' => 'http://localhost:8000/facebook/redirect',
         ],
         'google' => [
-            'client_id' => '
-            183489039152-bpg45oggaqbhccklnkv305m2msi1f9ut.apps.googleusercontent.com',
+            'client_id' => '183489039152-bpg45oggaqbhccklnkv305m2msi1f9ut.apps.googleusercontent.com',
             'client_secret' => 'F5naBp7jzN0o1pW9lEmz54eO',
-            'redirect_uri' => 'http://localhost:8000/google/redirect',
+            'redirect_uri' => 'https://localhost:8000/google/redirect',
         ],
         // 'github' => [
         //     'client_id' => '12345678',

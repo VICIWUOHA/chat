@@ -41,10 +41,10 @@ return [
             ],
         ],
 
-        'redis' => [
-            'driver' => 'redis',
-            'connection' => 'default',
-        ],
+        // 'redis' => [
+        //     'driver' => 'redis',
+        //     'connection' => 'default',
+        // ],
 
         'log' => [
             'driver' => 'log',

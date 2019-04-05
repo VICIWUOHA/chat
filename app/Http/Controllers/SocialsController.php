@@ -12,7 +12,7 @@ class SocialsController extends Controller
     public function auth($provider)
 
     {
-        
+
         return SocialAuth::authorize($provider);
 
     }
@@ -29,4 +29,7 @@ class SocialsController extends Controller
 
         return('/home');
     }
+
+    
+      
 }

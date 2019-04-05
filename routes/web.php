@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function () {  // commented for the chat system to work
     return view('welcome');
-});
+});  
 
 Route::get('/try', function () {
     return view('try');
@@ -34,5 +34,9 @@ Route::get('{provider}/redirect', [
       'uses' =>'SocialsController@auth_callback',
       'as'=>'social.callback']);
 
+//routes for my chat app
 
+Route::get('/chat', 'ChatsController@index')->name('chat');
+Route::get('messages', 'ChatsController@fetchMessages');
+Route::post('messages', 'ChatsController@sendMessage');
 

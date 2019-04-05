@@ -66,7 +66,9 @@
                         </div>
                     </form>
                 </div>
-                <br />
+            </div>
+
+            <br />
                         <p style="margin-left:265px">OR</p>
                         <br />
                         <div class="row">
@@ -77,8 +79,8 @@
                             <div class="col-md-4 ">
                               <a href="{{route('social.auth', ['provider' =>'google'])}}" class="btn btn-primary">Login with Google</a>
                             </div>
+
                         </div>
-            </div>
         </div>
 
        

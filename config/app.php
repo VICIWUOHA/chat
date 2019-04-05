@@ -177,7 +177,7 @@ return [
          */
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\BroadcastServiceProvider::class, //for pusher as broadcasting
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
        
@@ -233,6 +233,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'SocialAuth' => AdamWathan\EloquentOAuth\Facades\OAuth::class,
+        'Pusher' => Pusher\Pusher::class,
         
     ],
 
